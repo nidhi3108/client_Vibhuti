@@ -1,18 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Card from './component/Card';
-import Navbar from './component/Navbar';
+import Search from './component/Search';
 
 function App() {
   return (
-    <BrowserRouter>
-    <Navbar/>
-    <Routes>
-      <Route element={<Card/>} path="/user-mycourses"/>
-    </Routes>
-
-  </BrowserRouter>
+    <div className="App">
+      <Search />
+    </div>
   );
 }
 
